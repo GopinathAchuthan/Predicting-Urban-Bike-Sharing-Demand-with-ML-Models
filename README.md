@@ -43,40 +43,23 @@ pip install -r requirements.txt
 - `seaborn` (for advanced visualization)
 - `jupyter` (optional, for running notebooks)
 
-### Setting Up a Virtual Environment:
-1. Create a virtual environment:
-```bash
-python -m venv env
-```
-
-2. Activate the environment:
-- On Windows:
-```bash
-.\env\Scripts\activate
-```
-- On Mac/Linux:
-```bash
-source env/bin/activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
 ## Usage
 
-1. **Train the Model**: 
-Run the following command in your terminal or Jupyter notebook to start training the model:
-```bash
-python train_model.py
-```
+1. **Open the Jupyter Notebook**:  
+   Start the notebook by running:
+   ```bash
+   jupyter notebook
+   ```
+   Then, open your project notebook.
 
-2. **Make Predictions**: 
-To make predictions on the test data after training the model:
-```bash
-python predict.py
-```
+2. **Train the Model**:  
+   Run the cells in the notebook to preprocess the data and train the model.
+
+3. **Make Predictions**:  
+   After training, use the notebook to make predictions on the test data.
+
+4. **Evaluate the Model**:  
+   Evaluate model performance using appropriate metrics in the notebook.
 
 ### Input Data Format:
 - The dataset is in CSV format with columns like `datetime`, `season`, `holiday`, `workingday`, `weather`, `temp`, `atemp`, `humidity`, `windspeed`, `casual`, `registered`, and `count`.
@@ -155,7 +138,7 @@ The model performance is evaluated using the following metrics:
 | **XGBoost (With Regularization)** | 0.95      | 0.91          | 41.79         | 55.08           |
 
 - **Best Performing Model**: XGBoost with GridSearchCV achieved the best performance, significantly reducing RMSE and improving R² on both training and validation sets.
-- **Second Best**: XGBoost with Regularization offers a slight trade-off but helps in slightly reducing overfitting.
+- **Second Best**: XGBoost with Regularization offers a slight trade-off but helps slightly reduce overfitting.
 - **Linear Regression**: Performs the worst, highlighting the need for more complex models.
 
 ### Key Takeaways:
