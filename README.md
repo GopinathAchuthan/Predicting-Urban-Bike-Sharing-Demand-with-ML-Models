@@ -50,7 +50,7 @@ pip install -r requirements.txt
    ```bash
    jupyter notebook
    ```
-   Then, open your project notebook.
+   Then, open the project notebook.
 
 2. **Train the Model**:  
    Run the cells in the notebook to preprocess the data and train the model.
@@ -141,10 +141,8 @@ The model performance is evaluated using the following metrics:
 - **Second Best**: XGBoost with Regularization offers a slight trade-off but helps slightly reduce overfitting.
 - **Linear Regression**: Performs the worst, highlighting the need for more complex models.
 
-### Key Takeaways:
-- XGBoost outperforms simpler models by capturing more complex relationships in the data.
-- Hyperparameter tuning using GridSearchCV yields significantly better results, especially in terms of RMSE and R².
+## Summary:
+
+This project applies machine learning techniques to predict bike-sharing demand, with XGBoost with GridSearchCV emerging as the best-performing model. It significantly reduced RMSE and improved R² on both training and validation sets, demonstrating its effectiveness in capturing complex patterns in the data. The insights from this model can contribute to better bike allocation, reduced congestion, and an improved user experience in urban transportation systems, ultimately optimizing bike-sharing programs for more efficient urban mobility.
 
 ---
-
-By successfully applying machine learning techniques to predict bike-sharing demand, this project contributes to optimizing bike-sharing systems and improving urban mobility. The insights from the models can help allocate bikes more effectively, reduce congestion, and enhance the user experience in urban transportation systems.
